@@ -1115,7 +1115,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.sensor.citsensorservice@1.1 \
     vendor.xiaomi.sensor.citsensorservice@2.0 \
     vendor.xiaomi.sensor.communicate@1.0 \
-    consumerir.qcom \
     displayfeature.default \
     vendor.xiaomi.hw.touchfeature@1.0-impl \
     libMiDispDevManager \
