@@ -477,6 +477,25 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "android.hardware.gnss-aidl-impl-qti_sm8550",
+	stem: "android.hardware.gnss-aidl-impl-qti",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so"],
+			shared_libs: ["libbase", "libbinder_ndk", "android.hardware.gnss-V2-ndk", "android.hardware.health-V1-ndk", "android.hardware.health@1.0", "android.hardware.health@2.0", "android.hardware.health@2.1", "libhidlbase", "liblog", "libcutils", "libutils", "libloc_core", "libgps.utils", "liblocation_api", "libqti_vndfwk_detect_vendor", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "audio.bluetooth_qti.default",
 	owner: "xiaomi",
 	strip: {

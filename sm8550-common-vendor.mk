@@ -437,6 +437,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1-impl-qti \
     android.hardware.camera.provider@2.7-impl-vcamera \
     android.hardware.gatekeeper@1.0-impl-qti \
+    android.hardware.gnss-aidl-impl-qti_sm8550 \
     audio.bluetooth_qti.default \
     audio.primary.kalama_sm8550 \
     com.dsi.ant@1.0-impl \
