@@ -7,14 +7,12 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/audio/silent-3sec.wav:$(TARGET_COPY_OUT_ODM)/etc/audio/silent-3sec.wav \
-    vendor/xiaomi/sm8550-common/proprietary/odm/etc/init.panel_info.sh:$(TARGET_COPY_OUT_ODM)/etc/init.panel_info.sh \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/android.hardware.nfc@1.2-service-st.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.nfc@1.2-service-st.rc \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.tidaservice@1.2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.tidaservice@1.2-service.rc \
-    vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/izat_device.conf:$(TARGET_COPY_OUT_ODM)/etc/izat_device.conf \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nci.conf \
@@ -1100,12 +1098,10 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.micharge@1.0 \
     vendor.xiaomi.hardware.miface@1.0 \
     vendor.xiaomi.hardware.quickcamera@1.0 \
-    vendor.xiaomi.hw.touchfeature@1.0_vendor \
     vendor.xiaomi.sensor.citsensorservice@1.1 \
     vendor.xiaomi.sensor.citsensorservice@2.0 \
     vendor.xiaomi.sensor.communicate@1.0 \
     displayfeature.default \
-    vendor.xiaomi.hw.touchfeature@1.0-impl \
     libMiDispDevManager \
     libadaptivehdr \
     libagmdevice \
@@ -1210,7 +1206,6 @@ PRODUCT_PACKAGES += \
     manifest_vendor.xiaomi.hardware.mtdservice.xml \
     manifest_vendor.xiaomi.hardware.tidaservice.xml \
     vendor.qti.gnss-service.xml \
-    vendor.xiaomi.hw.touchfeature@1.0-service.xml \
     vendor.xiaomi.sensor.communicate@1.0_manifest.xml \
     ATFWD-daemon \
     adpl \
@@ -1335,7 +1330,6 @@ PRODUCT_PACKAGES += \
     fidoca \
     android.hardware.nfc@1.2-service-st \
     vendor.nxp.hardware.nfc@2.0-service \
-    vendor.xiaomi.hw.touchfeature@1.0-service \
     vendor.xiaomi.sensor.communicate@1.0-service \
     mlipayd@1.1 \
     mtd@1.3 \
