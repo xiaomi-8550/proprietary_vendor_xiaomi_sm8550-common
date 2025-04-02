@@ -10250,7 +10250,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.qxr-V1-ndk",
+	name: "vendor.qti.hardware.qxr-V1-ndk_vendor",
+	stem: "vendor.qti.hardware.qxr-V1-ndk",
 	owner: "xiaomi",
 	strip: {
 		none: true,
@@ -13961,7 +13962,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/sxrservice"],
-			shared_libs: ["vendor.qti.hardware.qxr-V1-ndk", "libbinder_ndk", "libbase", "liblog", "libutils", "libcutils", "libbinder", "libhardware", "libnativewindow", "libavservices_minijail", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["vendor.qti.hardware.qxr-V1-ndk_vendor", "libbinder_ndk", "libbase", "liblog", "libutils", "libcutils", "libbinder", "libhardware", "libnativewindow", "libavservices_minijail", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",

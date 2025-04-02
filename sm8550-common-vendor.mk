@@ -1002,7 +1002,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qconfig@1.0 \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
-    vendor.qti.hardware.qxr-V1-ndk \
+    vendor.qti.hardware.qxr-V1-ndk_vendor \
     vendor.qti.hardware.radio.am-V1-ndk_vendor \
     vendor.qti.hardware.radio.am@1.0_vendor \
     vendor.qti.hardware.radio.atcmdfwd-V1-ndk_vendor \
