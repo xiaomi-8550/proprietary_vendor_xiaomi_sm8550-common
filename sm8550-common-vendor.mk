@@ -1163,6 +1163,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
     QcomSoterService \
     com.android.hotwordenrollment.common.util \
+    mirilhook \
     android.hardware.radio.config.xml \
     android.hardware.radio.data.xml \
     android.hardware.radio.messaging.xml \

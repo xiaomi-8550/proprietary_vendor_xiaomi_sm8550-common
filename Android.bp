@@ -23048,6 +23048,15 @@ dex_import {
     system_ext_specific: true,
 }
 
+dex_import {
+    name: "mirilhook",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/system_ext/framework/mirilhook.jar",
+    ],
+    system_ext_specific: true,
+}
+
 prebuilt_etc_xml {
     name: "android.hardware.radio.config.xml",
     owner: "xiaomi",
