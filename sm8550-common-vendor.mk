@@ -536,22 +536,15 @@ PRODUCT_PACKAGES += \
     libadsp_default_listener \
     libadsprpc \
     libagm \
-    libagm_compress_plugin \
-    libagm_mixer_plugin \
-    libagm_pcm_plugin \
-    libagmclient \
-    libagmmixer \
     libar-acdb \
     libar-gpr \
     libar-gsl \
     libar-pal \
     libats \
     libaudio_log_utils \
-    libaudiochargerlistener \
     libaudiocloudctrl \
     libbase64 \
     libbatching \
-    libbatterylistener \
     libbitmlenginev2 \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \
@@ -614,7 +607,6 @@ PRODUCT_PACKAGES += \
     libfastcvdsp_stub \
     libfastcvopt \
     libfcsam \
-    libfmpal \
     libgarden \
     libgarden_haltests_e2e \
     libgdtap \
@@ -628,7 +620,6 @@ PRODUCT_PACKAGES += \
     libhdrdynamic \
     libhdrdynamicootf \
     libhdrvivid \
-    libhfp_pal \
     libhta_hexagon_runtime_snpe \
     libidl \
     libizat_client_api \
@@ -702,7 +693,6 @@ PRODUCT_PACKAGES += \
     libops \
     libos \
     libpal_net_if \
-    libpalclient \
     libpdmapper \
     libpdnotifier \
     libperipheral_client \
@@ -819,7 +809,6 @@ PRODUCT_PACKAGES += \
     libslimclient \
     libsn100u_fw \
     libsn220u_fw \
-    libsndcardparser \
     libsnpe_config \
     libsns_api \
     libsns_device_mode_stub \
@@ -922,9 +911,6 @@ PRODUCT_PACKAGES += \
     libhwdap \
     libldnhncr \
     libmisoundfx \
-    libqcompostprocbundle \
-    libqcomvisualizer \
-    libqcomvoiceprocessing \
     libquasar \
     libreverbwrapper \
     libshoebox \
@@ -933,7 +919,6 @@ PRODUCT_PACKAGES += \
     libswspatializer \
     libswvqe \
     libvisualizer \
-    libvolumelistener \
     vendor.dolby.hardware.dms@2.0-impl \
     vendor.dolby.hardware.dms@2.0 \
     vendor.libdpmctmgr \
@@ -955,7 +940,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.0 \
     vendor.qti.esepowermanager@1.1 \
     vendor.qti.hardware.AGMIPC@1.0-impl \
-    vendor.qti.hardware.AGMIPC@1.0 \
     vendor.qti.hardware.ListenSoundModel@1.0-impl \
     vendor.qti.hardware.ListenSoundModel@1.0_vendor \
     vendor.qti.hardware.bluetooth_sar@1.0 \
@@ -1212,18 +1196,11 @@ PRODUCT_PACKAGES += \
     ATFWD-daemon \
     adpl \
     adsprpcd \
-    agmcap \
-    agmcompresscap \
-    agmcompressplay \
-    agmhostless \
-    agmplay \
-    agmvoiceui \
     battery_stats \
     batterysecret \
     cdsprpcd \
     cnd \
     cnss-daemon_sm8550 \
-    cplay \
     diag-router \
     displayfeature \
     dpmQmiMgr \
