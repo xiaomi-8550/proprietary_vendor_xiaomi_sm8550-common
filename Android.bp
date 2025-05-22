@@ -1042,7 +1042,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/audio.primary.kalama.so",
             ],
             shared_libs: [
-                "libstagefright_foundation-v33",
                 "libbase",
                 "liblog",
                 "libcutils",
@@ -1055,7 +1054,7 @@ cc_prebuilt_library_shared {
                 "libar-pal",
                 "libaudiocloudctrl",
                 "gyro_fusion_interface",
-                "libstagefright_foundation",
+                "libstagefright_foundation-v33",
                 "libhardware_legacy",
                 "libresampler",
                 "libmispowerop",
@@ -24395,7 +24394,6 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/dolbycodec2",
             ],
             shared_libs: [
-                "libstagefright_foundation-v33",
                 "libbase",
                 "liblog",
                 "libcodec2",
@@ -24532,7 +24530,6 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service",
             ],
             shared_libs: [
-                "libstagefright_foundation-v33",
                 "liblog",
                 "libutils",
                 "libhidlbase",
@@ -24565,7 +24562,6 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/vendor.dolby.media.c2@1.0-service",
             ],
             shared_libs: [
-                "libstagefright_foundation-v33",
                 "libbase",
                 "liblog",
                 "libcodec2",
