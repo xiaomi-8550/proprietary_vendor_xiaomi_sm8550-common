@@ -11,116 +11,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqesdk2_0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libqesdk2_0.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libjsoncpp",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libhidlbase",
-                "libcrypto",
-                "libnl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqesdk2_0.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libjsoncpp",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libhidlbase",
-                "libcrypto",
-                "libnl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqesdk_manager",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libqesdk_manager.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libcrypto",
-                "libjsoncpp",
-                "libminkdescriptor",
-                "libminksocket_vendor",
-                "libqcbor",
-                "libbinder",
-                "libbinder_ndk",
-                "vendor.qti.qesdsys-V3-ndk",
-                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqesdk_manager.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libcrypto",
-                "libjsoncpp",
-                "libminkdescriptor",
-                "libminksocket_vendor",
-                "libqcbor",
-                "libbinder",
-                "libbinder_ndk",
-                "vendor.qti.qesdsys-V3-ndk",
-                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "android.hardware.secure_element@1.0-impl",
     owner: "xiaomi",
     strip: {
@@ -10815,6 +10705,74 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libdiag",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqesdk2_0",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqesdk2_0.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libjsoncpp",
+                "libcutils",
+                "libbase",
+                "libutils",
+                "libhidlbase",
+                "libcrypto",
+                "libnl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqesdk_manager",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqesdk_manager.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libcrypto",
+                "libjsoncpp",
+                "libminkdescriptor",
+                "libminksocket_vendor",
+                "libqcbor",
+                "libbinder",
+                "libbinder_ndk",
+                "vendor.qti.qesdsys-V3-ndk",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "libc++",
                 "libc",
                 "libm",

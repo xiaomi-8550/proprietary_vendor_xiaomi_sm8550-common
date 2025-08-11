@@ -396,8 +396,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/firmware/vpu33_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu33_4v_unsigned.mbn
 
 PRODUCT_PACKAGES += \
-    libqesdk2_0 \
-    libqesdk_manager \
     android.hardware.secure_element@1.0-impl \
     btaudio_offload_if \
     c2.dolby.client \
@@ -745,6 +743,8 @@ PRODUCT_PACKAGES += \
     libqdi \
     libqdp \
     libqdpr \
+    libqesdk2_0 \
+    libqesdk_manager \
     libqisl \
     libqmi \
     libqmi_cci \
