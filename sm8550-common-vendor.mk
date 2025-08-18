@@ -264,6 +264,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/models/acd/music.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/music.eai \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/models/acd/speech.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/speech.eai \
+    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/modem/Diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/modem/Diag.cfg \
+    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/modem/Diag_data.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/modem/Diag_data.cfg \
+    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/modem/Diag_default.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/modem/Diag_default.cfg \
+    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/modem/Diag_global.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/modem/Diag_global.cfg \
+    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/modem/Diag_ims.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/modem/Diag_ims.cfg \
+    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/modem/network_scan_config.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/modem/network_scan_config.cfg \
+    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/modem/power.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/modem/power.cfg \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/permissions/android.hardware.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.light.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/permissions/noRil/apq_excluded_telephony_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/noRil/apq_excluded_telephony_features.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
