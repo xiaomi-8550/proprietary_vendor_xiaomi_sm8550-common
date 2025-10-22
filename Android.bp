@@ -11171,6 +11171,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libqms_xiaomi.so",
             ],
             shared_libs: [
+                "libbinder_shim",
                 "liblog",
                 "libbinder",
                 "libutils",
