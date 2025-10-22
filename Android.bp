@@ -669,6 +669,9 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "hw",
     prefer: true,
+    overrides: [
+        "android.hardware.bluetooth.audio-impl",
+    ],
     soc_specific: true,
 }
 
