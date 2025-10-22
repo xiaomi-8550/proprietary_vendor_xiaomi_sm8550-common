@@ -877,6 +877,9 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "hw",
     prefer: true,
+    overrides: [
+        "android.hardware.gnss-aidl-impl-qti",
+    ],
     soc_specific: true,
 }
 
@@ -966,6 +969,9 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "hw",
     prefer: true,
+    overrides: [
+        "audio.primary.kalama",
+    ],
     soc_specific: true,
 }
 
@@ -12124,6 +12130,9 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
+    overrides: [
+        "libsdm-color",
+    ],
     soc_specific: true,
 }
 
@@ -12155,6 +12164,9 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
+    overrides: [
+        "libsdm-disp-vndapis",
+    ],
     soc_specific: true,
 }
 
@@ -12277,6 +12289,9 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
+    overrides: [
+        "libsdmextension",
+    ],
     soc_specific: true,
 }
 
@@ -22384,7 +22399,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.nfc@1.2",
                 "vendor.nxp.hardware.nfc@2.0",
                 "android.hardware.secure_element@1.0",
-                "libbase",
+                "libbase-v33",
                 "libcutils",
                 "libhardware",
                 "libhardware_legacy",
@@ -23846,6 +23861,9 @@ cc_prebuilt_binary {
         none: true,
     },
     prefer: true,
+    overrides: [
+        "cnss-daemon",
+    ],
     soc_specific: true,
 }
 
@@ -24686,6 +24704,9 @@ cc_prebuilt_binary {
     },
     prefer: true,
     relative_install_path: "hw",
+    overrides: [
+        "vendor.qti.hardware.display.composer-service",
+    ],
     soc_specific: true,
 }
 
