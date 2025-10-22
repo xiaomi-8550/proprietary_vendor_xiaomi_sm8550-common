@@ -4201,7 +4201,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libexpat",
                 "liblx-osal",
-                "libaudioroute",
+                "libaudioroute-v34",
                 "libcutils",
                 "libutilscallstack",
                 "libagmclient",
