@@ -1268,7 +1268,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sensors \
     init.qti.media \
     init.qti.qcv \
-    init.qti.write \
     irsc_util \
     ks \
     loadalgo \
