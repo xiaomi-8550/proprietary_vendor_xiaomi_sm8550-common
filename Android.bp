@@ -25992,6 +25992,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/qguard",
             ],
             shared_libs: [
+                "libbase_shim",
                 "libbase",
                 "libcutils",
                 "liblog",
