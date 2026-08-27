@@ -1093,8 +1093,6 @@ PRODUCT_PACKAGES += \
     vendor.rongcard.hardware.eid@1.0 \
     vendor.xiaomi.hardware.bgservice@1.0 \
     vendor.xiaomi.hardware.campostproc@1.0 \
-    vendor.xiaomi.hardware.displayfeature@1.0_vendor \
-    vendor.xiaomi.hardware.fingerprintextension@1.0_vendor \
     vendor.xiaomi.hardware.micharge@1.0 \
     vendor.xiaomi.hardware.miface@1.0 \
     vendor.xiaomi.hardware.quickcamera@1.0 \
