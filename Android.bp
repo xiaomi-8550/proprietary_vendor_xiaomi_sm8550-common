@@ -911,6 +911,7 @@ cc_prebuilt_library_shared {
                 "libtinyalsa",
                 "libxlog",
                 "libagm",
+                "libmisight",
                 "libmisfpsop",
                 "vendor.qti.hardware.pal@1.0-impl",
                 "vendor.qti.hardware.pal@1.0",
@@ -3639,6 +3640,7 @@ cc_prebuilt_library_shared {
                 "libaudioroute",
                 "libats",
                 "libxlog",
+                "libmisight",
                 "libtinyalsa",
                 "libaudio_log_utils",
                 "libexpat",
@@ -4892,6 +4894,74 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcodec2_soft_mihc_dec",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_mihc_dec.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk",
+                "libutils",
+                "libcodec2_soft_common",
+                "libcutils",
+                "liblog",
+                "libsfplugin_ccodec_utils",
+                "libstagefright_foundation-v33",
+                "libcodec2_store_mi",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_mihc_enc",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_mihc_enc.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk",
+                "libutils",
+                "libcodec2_soft_common",
+                "libcutils",
+                "liblog",
+                "libsfplugin_ccodec_utils",
+                "libstagefright_foundation-v33",
+                "libcodec2_store_mi",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcodec2_store_dolby",
     owner: "xiaomi",
     strip: {
@@ -4904,6 +4974,35 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libdmabufheap",
+                "libbase",
+                "liblog",
+                "libcodec2",
+                "libcodec2_vndk",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_store_mi",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_store_mi.so",
+            ],
+            shared_libs: [
                 "libbase",
                 "liblog",
                 "libcodec2",
@@ -9828,6 +9927,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "qcrilInterfaces",
                 "libxiaomi_qcril",
+                "libcutils",
                 "libhidlbase",
                 "android.hardware.radio@1.0",
                 "android.hardware.radio@1.1",
@@ -9847,7 +9947,6 @@ cc_prebuilt_library_shared {
                 "vendor.qti.hardware.radio.lpa@1.1_vendor",
                 "vendor.qti.hardware.radio.lpa@1.2_vendor",
                 "vendor.qti.hardware.radio.lpa@1.3_vendor",
-                "libcutils",
                 "liblog",
                 "libutils",
                 "qcrild_libqcrilnrutils",
@@ -11933,35 +12032,6 @@ cc_prebuilt_library_shared {
                 "libdmabufheap",
                 "libvmmem",
                 "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsecureui_svcsock",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsecureui_svcsock.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libhidlbase",
-                "vendor.qti.hardware.tui_comm@1.0",
-                "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],
@@ -22402,10 +22472,10 @@ dex_import {
 }
 
 dex_import {
-    name: "mirilhook",
+    name: "xiaomi-modem-common",
     owner: "xiaomi",
     jars: [
-        "proprietary/system_ext/framework/mirilhook.jar",
+        "proprietary/system_ext/framework/xiaomi-modem-common.jar",
     ],
     system_ext_specific: true,
 }
@@ -25407,36 +25477,6 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "libqrtr",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "qseecom_sample_client",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/qseecom_sample_client",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libQSEEComAPI",
-                "libdmabufheap",
-                "libminkdescriptor",
                 "libc++",
                 "libc",
                 "libm",
